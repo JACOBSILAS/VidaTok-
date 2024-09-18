@@ -1,0 +1,110 @@
+
+### CSS (styles.css)
+
+```css
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.burger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.newsletter {
+    padding: 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.blog-posts {
+    padding: 2rem;
+}
+
+.comments {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #333;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .line1, .line2, .line3 {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+        transition: transform 0.4s ease;
+    }
+
+    .nav-active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .nav-active .line2 {
+        opacity: 0;
+    }
+
+    .nav-active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
