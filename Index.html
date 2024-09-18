@@ -1,0 +1,58 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Talk - Your Blog Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vida Talk</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <form id="newsletterForm">
+            <input type="email" id="emailInput" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="blog-posts">
+        <!-- Blog posts will be dynamically added here -->
+    </section>
+
+    <section class="comments">
+        <h2>Comments</h2>
+        <div id="commentsList">
+            <!-- Comments will be dynamically added here -->
+        </div>
+        <form id="commentForm">
+            <input type="text" id="nameInput" placeholder="Your name" required>
+            <textarea id="commentInput" placeholder="Your comment" required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vida Talk. All rights reserved.</p>
+  </footer>
+  </body>
+</html>
+
